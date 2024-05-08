@@ -6,7 +6,13 @@ import App from './App';
 // import reducer from "./pages/redux/reducer";
 import {Provider} from "react-redux";
 import store from './counterPage/Store';
+import {BrowserRouter} from  'react-router-dom'
 
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
